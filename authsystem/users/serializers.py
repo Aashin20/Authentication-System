@@ -33,4 +33,4 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         return user
-        return super().create(validated_data)
+        
